@@ -1,0 +1,26 @@
+#logo{
+    width: 10rem;
+    height: 5rem;
+    margin-right: 20rem;
+    margin-left: 10rem;
+    margin-top: 2rem;
+    position: absolute;
+    }
+
+body {
+    background-image:url(/Mobile-App/img/bg_001.jpg);
+    background-size: auto;
+}
+nav ul {
+    display: inline-block;
+    margin-top: 4rem;
+    
+     }
+
+nav ul a {
+    color: white;
+    text-decoration:none ;
+    }
+    .topnav {
+        margin-left: 50rem;
+    }
