@@ -1,65 +1,78 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-#logo{
-    width: 10rem;
-    height: 5rem;
-    margin-right: 20rem;
-    margin-left: 10rem;
-    margin-top: 2rem;
-    position: absolute;
-    }
+#logo {
+  width: 10rem;
+  height: 5rem;
+  margin-right: 20rem;
+  margin-left: 10rem;
+  margin-top: 2rem;
+  position: absolute;
+}
 
 body {
-    background-image:url(/Mobile-App/img/bg_001.jpg);
-    background-size: auto;
+  background-image: url(/Mobile-App/img/bg_001.jpg);
+  background-size: auto;
 }
 nav ul {
-    display: inline-block;
-    margin-top: 4rem;
-    
-     }
+  display: inline-block;
+  margin-top: 4rem;
+}
 
 nav ul a {
-    color: white;
-    text-decoration:none ;
-    font-style: bold;
-    font-size: medium;
-    }
-    .topnav {
-        margin-left: 40rem;
-    }
-   
-      section h1 {
-          color: white;
-      }
-      section {
-          margin-top:8rem ;
-      }
-      .left-side {
-         float: left;
-         width: 50%;
-          border: black 1px solid;
-          padding-left: 15rem;
-          
-      }
-      .right-side {
-          float: left;
-          width: 50%;
-          height: 50%;
-          border: black 1px solid;
-      }
-      .right-side img {
-          height: 30rem;
-          width: 13rem;
-          
-      }
-      #black {
-          position:relative;
-          padding-right: 2px;
-      }
-      #white {
-          position: absolute;
-          margin-left: 5rem;
-          margin-top: -1rem;
-      }
+  color: white;
+  text-decoration: none;
+  font-style: bold;
+  font-size: medium;
+}
+.topnav {
+  margin-left: 40rem;
+}
+section h1 {
+  font-size: 40px;
+}
+section,
+p {
+  color: white;
+  font-size: x-large;
+}
+section {
+  margin-top: 6rem;
+}
+.left-side {
+  float: left;
+  width: 50%;
+  padding-left: 26rem;
+  padding-right: 2rem;
+}
+.right-side {
+  float: left;
+  width: 50%;
+  height: 50%;
+}
+.right-side img {
+  height: 30rem;
+  width: 13rem;
+}
+#black {
+  position: relative;
+  padding-right: 2px;
+}
+#white {
+  position: absolute;
+  margin-left: 5rem;
+  margin-top: -1rem;
+}
+section a {
+  margin-left: 2rem;
+  padding: 8px 15px;
+  text-decoration: none;
+  color: white;
+  border-radius: 4px;
+}
+#learnmore {
+  background-color: rgb(83, 160, 116);
+}
+#gettheapp {
+  background-color: blue;
+}
