@@ -4,19 +4,19 @@
 #logo {
   width: 10rem;
   height: 5rem;
-  margin-right: 20rem;
-  margin-left: 10rem;
-  margin-top: 2rem;
   position: absolute;
+  margin-left: -25rem;
+  margin-top: -1rem;
 }
 
 body {
-  background-image: url(/Mobile-App/img/bg_001.jpg);
+  background-image: url(/img/bg_001.jpg);
   background-size: auto;
 }
 nav ul {
   display: inline-block;
-  margin-top: 4rem;
+  margin-top: 3rem;
+  
 }
 
 nav ul a {
@@ -69,6 +69,7 @@ section a {
   text-decoration: none;
   color: white;
   border-radius: 4px;
+  font-style: oblique;
 }
 #learnmore {
   background-color: rgb(78, 139, 78);
