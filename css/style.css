@@ -8,16 +8,16 @@
   max-width: 17.25rem;
   position: absolute;
   margin-left: -18vw;
-  margin-top: -1vw;
+  margin-top: -1.5vw;
 }
 
 body {
-  background-image: url(/img/bg_001.jpg);
+  background-image: url("../img/bg_001.jpg");
   background-repeat: no-repeat;
 }
 nav ul {
   display: inline-block;
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 
 nav ul a {
@@ -44,15 +44,15 @@ section {
 .left-side {
   float: left;
   width: 50%;
-  height: 50vh;
-  padding-left: 17vw;
+  height: 50%;
+  padding-left: 15vw;
   padding-right: 4vw;
   position: relative;
 }
 .right-side {
   float: left;
   width: 50%;
-  height: 50vh;
+  height: 50%;
   position: relative;
 }
 .right-side img {
