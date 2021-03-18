@@ -25,6 +25,8 @@ nav {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+
+  width: 80vw;
 }
 .topnav {
   display: flex;
@@ -34,6 +36,24 @@ nav {
   height: 15vh;
 }
 
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+nav ul a {
+  color: white;
+  text-decoration: none;
+  font-style: bold;
+  font-size: 1vw;
+  border: 1px solid;
+}
+
+nav ul a:hover {
+  border-radius: 15px;
+}
 .main {
   height: 50vh;
   width: 100vw;
@@ -42,14 +62,6 @@ nav {
   justify-content: center;
   align-items: center;
 }
-
-nav ul a {
-  color: white;
-  text-decoration: none;
-  font-style: bold;
-  font-size: 1vw;
-}
-
 section,
 p {
   color: white;
@@ -117,24 +129,24 @@ section a {
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-   position: relative;
-   box-shadow: 1px 1px gray;
-   border: 1px solid;
-
+  position: relative;
+  box-shadow: 1px 1px gray;
+  border: 1px solid;
+  cursor: pointer;
+}
+.xmenu:hover {
+  border-radius: 5px;
 }
 .kid {
   background-color: white;
   width: 1.5rem;
   height: 0.2rem;
-  
- 
-
 }
 .up {
   position: absolute;
   animation-name: x-menu;
   animation-timing-function: ease-in-out;
-  animation-iteration-count: 3;
+  animation-iteration-count: infinite;
   animation-play-state: running;
   animation-duration: 3s;
   animation-fill-mode: forwards;
@@ -143,32 +155,61 @@ section a {
   from {
     transform: rotate(0.15turn);
     background-color: violet;
-
   }
   to {
-    transform: rotate(0.90turn);
+    transform: rotate(0.9turn);
     background-color: black;
-
   }
 }
 .bottom {
   position: absolute;
   animation-name: x-menu-b;
   animation-timing-function: ease-in-out;
-  animation-iteration-count: 3;
+  animation-iteration-count: infinite;
   animation-play-state: running;
   animation-duration: 3s;
   animation-fill-mode: forwards;
 }
 @keyframes x-menu-b {
   from {
-    transform: rotate(0.90turn);
+    transform: rotate(0.9turn);
     background-color: steelblue;
-
   }
   to {
     transform: rotate(0.15turn);
     background-color: gray(78, 139, 78);
+  }
+}
 
+@media only screen and (max-width: 700px) {
+  nav {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body {
+    grid-template-rows: 45% 55%;
+  }
+  .main {
+    flex-wrap: wrap;
+  }
+  #logo {
+    display: none;
+  }
+  .topnav {
+    height: 40vh;
+
+    justify-content: left;
+    flex-direction: column;
+  }
+  .topnav ul a {
+    font-weight: bold;
+  }
+  nav ul {
+    width: 80vw;
+  }
+  nav ul a {
+    width: 40vw;
   }
 }
