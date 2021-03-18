@@ -119,6 +119,7 @@ section a {
   flex-direction: column;
    position: relative;
    box-shadow: 1px 1px gray;
+   border: 1px solid;
 
 }
 .kid {
@@ -133,7 +134,7 @@ section a {
   position: absolute;
   animation-name: x-menu;
   animation-timing-function: ease-in-out;
-  animation-iteration-count: 1;
+  animation-iteration-count: 3;
   animation-play-state: running;
   animation-duration: 3s;
   animation-fill-mode: forwards;
@@ -154,7 +155,7 @@ section a {
   position: absolute;
   animation-name: x-menu-b;
   animation-timing-function: ease-in-out;
-  animation-iteration-count: 1;
+  animation-iteration-count: 3;
   animation-play-state: running;
   animation-duration: 3s;
   animation-fill-mode: forwards;
