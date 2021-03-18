@@ -12,7 +12,7 @@
 body {
   background-image: url("../img/bg_001.jpg");
   background-repeat: no-repeat;
-  
+
   width: 100vw;
   height: 100vh;
   display: grid;
@@ -57,7 +57,7 @@ nav ul a:hover {
 .main {
   height: 60vh;
   width: 100vw;
-  border: 1px solid black;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,7 +73,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
- border: 1px red solid;
+
   width: 30%;
   height: 100%;
   flex-direction: column;
@@ -87,7 +87,6 @@ p {
   width: 30%;
   height: 100%;
   position: relative;
-  border: 1px solid;
 }
 .right-side img {
   height: 50vh;
@@ -184,7 +183,7 @@ section a {
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
   nav {
     flex-direction: column;
     display: flex;
@@ -192,7 +191,7 @@ section a {
     align-items: center;
   }
   body {
-    grid-template-rows: 40% 60%
+    grid-template-rows: 35% 65%;
   }
   .main {
     flex-wrap: wrap;
@@ -216,11 +215,12 @@ section a {
     width: 40vw;
     font-size: 10px;
   }
-  p ,h2{
+  p,
+  h2 {
     font-size: 12px;
-  
+    font-weight: bold;
   }
-  a{ 
+  a {
     font-size: 8px;
   }
   #white {
@@ -228,11 +228,11 @@ section a {
     top: 4rem;
   }
   .right-side img {
-    width: 25vw;
+    width: 28vw;
     height: 40vh;
   }
-  .left-side ,.right-side {
+  .left-side,
+  .right-side {
     width: 45%;
   }
 }
-
