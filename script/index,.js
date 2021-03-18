@@ -1,5 +1,5 @@
 let clicked = false;
-document.querySelector("xmenu").addEventListener("click", () => {
+document.querySelector(".xmenu").addEventListener("click", () => {
   clicked = !clicked;
   console.log(clicked);
   if (clicked) {
