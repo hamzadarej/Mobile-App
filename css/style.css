@@ -5,7 +5,7 @@
   width: 10vw;
   height: 10vh;
   min-width: 4rem;
-  min-height:1rem;
+  min-height: 1rem;
   box-sizing: content-box;
 }
 
@@ -14,12 +14,10 @@ body {
   background-repeat: no-repeat;
   border: 1px black solid;
   width: 100vw;
- height: 100vh;
- display: grid;
- grid-template-columns: 100%;
- grid-template-rows:  30% 70%;
-
-
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 30% 70%;
 }
 
 nav {
@@ -27,28 +25,23 @@ nav {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
- 
-  
 }
 .topnav {
- 
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 15vh;
-  
 }
 
 .main {
   height: 50vh;
   width: 100vw;
- 
+
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 
 nav ul a {
   color: white;
@@ -56,7 +49,6 @@ nav ul a {
   font-style: bold;
   font-size: 1vw;
 }
-
 
 section,
 p {
@@ -69,21 +61,18 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   width: 30%;
   height: 100%;
   flex-direction: column;
-  
+
   position: relative;
-  
-  
 }
 .right-side {
   float: left;
   width: 30%;
   height: 100%;
   position: relative;
-  
 }
 .right-side img {
   height: 50vh;
@@ -91,7 +80,6 @@ p {
 }
 #black {
   position: relative;
-  
 }
 #white {
   position: absolute;
@@ -99,17 +87,11 @@ p {
   margin-top: -1rem;
 }
 section a {
- 
   text-decoration: none;
   color: white;
   border-radius: 4px;
   font-style: oblique;
   padding: 7px;
-  
-  
-
-
-  
 }
 #learnmore {
   background-color: rgb(78, 139, 78);
@@ -126,4 +108,66 @@ section a {
 }
 #black:hover {
   box-shadow: black 8px 8px 8px 8px;
+}
+.xmenu {
+  background-color: gray;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+   position: relative;
+   box-shadow: 1px 1px gray;
+
+}
+.kid {
+  background-color: white;
+  width: 1.5rem;
+  height: 0.2rem;
+  
+ 
+
+}
+.up {
+  position: absolute;
+  animation-name: x-menu;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-play-state: running;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes x-menu {
+  from {
+    transform: rotate(0.15turn);
+    background-color: violet;
+
+  }
+  to {
+    transform: rotate(0.90turn);
+    background-color: black;
+
+  }
+}
+.bottom {
+  position: absolute;
+  animation-name: x-menu-b;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-play-state: running;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes x-menu-b {
+  from {
+    transform: rotate(0.90turn);
+    background-color: steelblue;
+
+  }
+  to {
+    transform: rotate(0.15turn);
+    background-color: gray(78, 139, 78);
+
+  }
 }
